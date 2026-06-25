@@ -1,5 +1,7 @@
 # Evaluador FONDECYT Matemáticas
 
+**App web:** https://evaluabot.streamlit.app/
+
 Prototipo en Python + Streamlit para evaluar publicaciones en revistas del grupo de estudios de Matemáticas FONDECYT.
 
 ## Qué hace
