@@ -206,7 +206,7 @@ with st.form("evaluation_form"):
 
     with col_params:
         since_year = st.number_input("Desde el año", min_value=1900, max_value=2100, value=2021, step=1)
-        fuzzy_threshold = st.slider("Umbral fuzzy", min_value=80, max_value=100, value=86, step=1)
+        fuzzy_threshold = st.slider("Umbral fuzzy", min_value=80, max_value=100, value=95, step=1)
 
     with col_optional:
         st.markdown("**Campos opcionales**")
