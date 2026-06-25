@@ -186,6 +186,17 @@ def _compact_review_table(review: pd.DataFrame) -> pd.DataFrame:
 st.title("Evaluador de publicaciones FONDECYT — Matemáticas")
 st.caption("El listado FONDECYT se carga automáticamente. Puedes subir un archivo BibTeX o pegar la bibliografía directamente.")
 
+st.info(
+    "Esta herramienta considera únicamente revistas clasificadas como **MB**, **B** o **R** en el listado incorporado. "
+    "No se cuentan revistas clasificadas como **E** ni publicaciones en **proceedings**, actas o conferencias."
+)
+
+st.warning(
+    "Uso solo referencial: los resultados, matches y conteos deben ser revisados por el usuario. "
+    "La verificación final de la información es responsabilidad de quien utiliza la herramienta. "
+    "Si detectas errores, por favor informa a p.montealegre@uai.cl."
+)
+
 if not DEFAULT_LISTADO_PATH.exists():
     st.error(
         "No encontré el archivo listado.xlsx junto a app_streamlit.py. "
